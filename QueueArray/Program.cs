@@ -3,6 +3,7 @@ QueueArray queue1 = new QueueArray(3);
 queue1.Enqueu(99);
 queue1.Enqueu(100);
 queue1.Enqueu(1111);
+queue1.Display();
 queue1.IsFull();
 queue1.Dequeu();
 queue1.Peek();
@@ -102,12 +103,14 @@ public class QueueArray
         else
         {
             Console.WriteLine("Queue Items:");
-            for (int i = rear; i >= front; i--)
+            for (int i = front; i <= rear ; i++)
             {
-
                 Console.WriteLine(Queue[i]);
             }
         }
     }
+  
 }
+
+
 
